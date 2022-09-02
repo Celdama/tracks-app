@@ -7,7 +7,9 @@ const SignupScreen = ({ navigation }) => {
   return (
     <>
       <Spacer>
-        <Text h3>Sign Up for Tracker</Text>
+        <Text h3 style={{ textAlign: 'center' }}>
+          Sign Up for Tracker
+        </Text>
       </Spacer>
       <Input label='Email' />
       <Spacer />
