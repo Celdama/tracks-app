@@ -1,11 +1,11 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { Button, Input, Text } from 'react-native-elements';
 
 import Spacer from '../components/Spacer';
 
 const SignupScreen = ({ navigation }) => {
   return (
-    <>
+    <View style={styles.container}>
       <Spacer>
         <Text h3 style={{ textAlign: 'center' }}>
           Sign Up for Tracker
@@ -17,7 +17,7 @@ const SignupScreen = ({ navigation }) => {
       <Spacer>
         <Button title='Sign Up' />
       </Spacer>
-    </>
+    </View>
   );
 };
 
@@ -27,6 +27,12 @@ SignupScreen.navigationOptions = () => {
   };
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    marginBottom: 180,
+  },
+});
 
 export default SignupScreen;
